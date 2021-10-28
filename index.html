@@ -1,0 +1,66 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+
+      <h3 class="btn btn-danger heading"> Emotion Recognizer
+                                           What do you feel?
+                <br>
+                <span>&#128077;</span>
+                <span>&#128078;</span>
+                <span>&#128076;</span>
+                <span>&#129304;</span>
+      </h3>
+
+      <p style="font-size: 22px;">Show your Hand Signs To help People in In need
+      
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div id="camera"></div>
+        <br><br>
+        <label>Webcam View - </label>
+          <br><br>
+        <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+             </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label class="btn btn-info text-primary">Prediction 1 - </label>
+              <p class="sign_name" id="handsign"></p>
+              <p class="sign" id="updatesign"></p>
+            
+
+           
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+              <label>Snapshot - </label>
+              <div id="result"></div>
+              <br><br>
+              <button onclick="check();" class="btn btn-primary">Predict Emotion</button>
+                 </div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
